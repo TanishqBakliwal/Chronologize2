@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Chronologize</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="time_table">Time Table</string>
+    <string name="analytics">Analytics</string>
+    <string name="profile">Profile</string>
+</resources>
