@@ -1,18 +1,585 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".TimeTableFragment">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_input_add" />
-</android.support.constraint.ConstraintLayout>
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/time"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+
+            >
+
+            <TextView
+                android:id="@+id/t0"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Time Slots"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="0900:1000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1000:1100"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1100:1200"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1200:1300"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1430:1600"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1600:1730"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/t7"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1730:1900"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/t8"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1900:2030"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/t9"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Extra"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mon"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mo0"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="MON"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/mo1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="0900:1000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/mo2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1000:1100"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/mo3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1100:1200"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/mo4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1200:1300"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/mo5"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1430:1600"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/mo6"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1600:1730"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/mo7"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1730:1900"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/mo8"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1900:2030"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/mo9"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Extra"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tue"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tu0"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="TUE"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tu1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="0900:1000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tu2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1000:1100"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tu3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1100:1200"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tu4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1200:1300"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tu5"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1430:1600"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/tu6"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1600:1730"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tu7"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1730:1900"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tu8"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1900:2030"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tu9"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Extra"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wed"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/we0"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="WED"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/we1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="0900:1000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/we2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1000:1100"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/we3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1100:1200"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/we4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1200:1300"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/we5"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1430:1600"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/we6"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1600:1730"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/we7"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1730:1900"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/we8"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1900:2030"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/we9"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Extra"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thu"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/th0"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="THU"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/th1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="0900:1000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/th2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1000:1100"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/th3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1100:1200"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/th4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1200:1300"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/th5"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1430:1600"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/th6"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1600:1730"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/th7"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1730:1900"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/th8"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1900:2030"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/th9"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Extra"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fri"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fr0"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="FRI"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fr1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="0900:1000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fr2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1000:1100"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fr3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1100:1200"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fr4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1200:1300"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fr5"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1430:1600"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/fr6"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1600:1730"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fr7"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1730:1900"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fr8"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1900:2030"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fr9"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Extra"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sat"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sa0"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="SAT"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/sa1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="0900:1000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/sa2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1000:1100"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/sa3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1100:1200"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/sa4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1200:1300"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/sa5"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1430:1600"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/sa6"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1600:1730"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/sa7"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1730:1900"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/sa8"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1900:2030"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/sa9"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Extra"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

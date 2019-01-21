@@ -1,13 +1,13 @@
 /*
- * Developed by Vedant Singh on 13 / 01 / 2019
+ * Developed by Vedant Singh on 13/01/2019
  */
 
 
 package com.example.vedantsingh.chronologize;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.internal.BottomNavigationItemView;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -66,5 +66,10 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
 
+    }
+
+    public void create_timetable() {
+        Intent intent = new Intent(this, CreateTimeTable.class);
+        startActivity(intent);
     }
 }
