@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="220dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="monospace"
+        android:padding="2dp"
+        android:text="@string/pageTitleText"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/UtilityBar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/reserved_space_for_utility_barText"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TableLayout
+        android:id="@+id/headingTable"
+        android:layout_width="360dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pageTitle">
+
+        <TableRow
+            android:id="@+id/HeadingRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/CourseCode"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/course_code"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:padding="0.5dp"/>
+
+            <TextView
+                android:id="@+id/CourseName"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/course_name"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:padding="0.5dp"/>
+
+            <TextView
+                android:id="@+id/ClassesTillDate"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/classes_till_date"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:padding="0.5dp"/>
+
+            <TextView
+                android:id="@+id/ClassesAttended"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/classes_attended"
+                android:textColor="#000000"
+                android:padding="0.5dp"/>
+
+            <TextView
+                android:id="@+id/PercentageAttendance"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/percent_attended"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:padding="0.5dp"/>
+
+        </TableRow>
+    </TableLayout>
+
+
+    <ScrollView
+        android:layout_width="360dp"
+        android:layout_height="328dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/UtilityBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headingTable"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:id="@+id/TR0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_row="0">
+
+                <TextView
+                    android:id="@+id/TR0Tv1"
+                    android:layout_width="60dp" />
+
+                <TextView
+                    android:id="@+id/TR0Tv2"
+                    android:layout_width="120dp" />
+
+                <TextView
+                    android:id="@+id/TR0Tv3"
+                    android:layout_width="60dp" />
+
+                <TextView
+                    android:id="@+id/TR0Tv4"
+                    android:layout_width="60dp" />
+
+                <ProgressBar
+                    android:id="@+id/TR0Pb"
+                    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="60dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TR1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_row="1">
+
+                <TextView
+                    android:id="@+id/TR1Tv1"
+                    android:layout_width="60dp" />
+
+                <TextView
+                    android:id="@+id/TR1Tv2"
+                    android:layout_width="120dp" />
+
+                <TextView
+                    android:id="@+id/TR1Tv3"
+                    android:layout_width="60dp" />
+
+                <TextView
+                    android:id="@+id/TR1Tv4"
+                    android:layout_width="60dp" />
+
+                <ProgressBar
+                    android:id="@+id/TR1Pb"
+                    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="60dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TR2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_row="2">
+
+                <TextView
+                    android:id="@+id/TR2Tv1"
+                    android:layout_width="60dp" />
+
+                <TextView
+                    android:id="@+id/TR2Tv2"
+                    android:layout_width="120dp" />
+
+                <TextView
+                    android:id="@+id/TR2Tv3"
+                    android:layout_width="60dp" />
+
+                <TextView
+                    android:id="@+id/TR2Tv4"
+                    android:layout_width="60dp" />
+
+                <ProgressBar
+                    android:id="@+id/TR2Pb"
+                    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="60dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TR3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_row="3">
+
+                <TextView
+                    android:id="@+id/TR3Tv1"
+                    android:layout_width="60dp" />
+
+                <TextView
+                    android:id="@+id/TR3Tv2"
+                    android:layout_width="120dp" />
+
+                <TextView
+                    android:id="@+id/TR3Tv3"
+                    android:layout_width="60dp" />
+
+                <TextView
+                    android:id="@+id/TR3Tv4"
+                    android:layout_width="60dp" />
+
+                <ProgressBar
+                    android:id="@+id/TR3Pb"
+                    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="60dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TR4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_row="4">
+                <TextView
+                    android:id="@+id/TR4Tv1"
+                    android:layout_width="60dp" />
+
+                <TextView
+                    android:id="@+id/TR4Tv2"
+                    android:layout_width="120dp" />
+
+                <TextView
+                    android:id="@+id/TR4Tv3"
+                    android:layout_width="60dp" />
+
+                <TextView
+                    android:id="@+id/TR4Tv4"
+                    android:layout_width="60dp" />
+
+                <ProgressBar
+                    android:id="@+id/TR4Pb"
+                    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="60dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TR5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_row="5">
+
+                <TextView
+                    android:id="@+id/TR5Tv1"
+                    android:layout_width="60dp" />
+
+                <TextView
+                    android:id="@+id/TR5Tv2"
+                    android:layout_width="120dp" />
+
+                <TextView
+                    android:id="@+id/TR5Tv3"
+                    android:layout_width="60dp" />
+
+                <TextView
+                    android:id="@+id/TR5Tv4"
+                    android:layout_width="60dp" />
+
+                <ProgressBar
+                    android:id="@+id/TR5Pb"
+                    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="60dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TR6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_row="6">
+
+                <TextView
+                    android:id="@+id/TR6Tv1"
+                    android:layout_width="60dp" />
+
+                <TextView
+                    android:id="@+id/TR6Tv2"
+                    android:layout_width="120dp" />
+
+                <TextView
+                    android:id="@+id/TR6Tv3"
+                    android:layout_width="60dp" />
+
+                <TextView
+                    android:id="@+id/TR6Tv4"
+                    android:layout_width="60dp" />
+
+                <ProgressBar
+                    android:id="@+id/TR6Pb"
+                    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="60dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TR7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_row="7">
+
+                <TextView
+                    android:id="@+id/TR7Tv1"
+                    android:layout_width="60dp" />
+
+                <TextView
+                    android:id="@+id/TR7Tv2"
+                    android:layout_width="120dp" />
+
+                <TextView
+                    android:id="@+id/TR7Tv3"
+                    android:layout_width="60dp" />
+
+                <TextView
+                    android:id="@+id/TR7Tv4"
+                    android:layout_width="60dp" />
+
+                <ProgressBar
+                    android:id="@+id/TR7Pb"
+                    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="60dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TR8"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_row="8">
+
+                <TextView
+                    android:id="@+id/TR8Tv1"
+                    android:layout_width="60dp" />
+
+                <TextView
+                    android:id="@+id/TR8Tv2"
+                    android:layout_width="120dp" />
+
+                <TextView
+                    android:id="@+id/TR8Tv3"
+                    android:layout_width="60dp" />
+
+                <TextView
+                    android:id="@+id/TR8Tv4"
+                    android:layout_width="60dp" />
+
+                <ProgressBar
+                    android:id="@+id/TR8Pb"
+                    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="60dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TR9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_row="9">
+
+                <TextView
+                    android:id="@+id/TR9Tv1"
+                    android:layout_width="60dp" />
+
+                <TextView
+                    android:id="@+id/TR9Tv2"
+                    android:layout_width="120dp" />
+
+                <TextView
+                    android:id="@+id/TR9Tv3"
+                    android:layout_width="60dp" />
+
+                <TextView
+                    android:id="@+id/TR9Tv4"
+                    android:layout_width="60dp" />
+
+                <ProgressBar
+                    android:id="@+id/TR9Pb"
+                    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="60dp" />
+            </TableRow>
+
+        </android.support.v7.widget.GridLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

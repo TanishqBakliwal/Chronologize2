@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Chronologize</string>
+    <string name="pageTitleText">Analytics</string>>
+    <string name="awesomeQuoteText">For fastening the horse\'s saddle that treads your present\'s prospective ,
+                                    one must keep in mind experiences and associated conclusions.   </string>
+    <string name="profile_picture_description">Profile picture</string>
+    <string name="reserved_space_for_utility_barText">Reserved Space for utility bar</string>
+    <string name="course_code">Course Code</string>
+    <string name="classes_attended">Classes Attended</string>
+    <string name="course_name">Course Name</string>
+    <string name="classes_till_date">Classes Till Date</string>
+    <string name="percent_attended">Percent Attended</string>
+
+</resources>

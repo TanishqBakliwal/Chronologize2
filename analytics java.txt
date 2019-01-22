@@ -1,0 +1,136 @@
+    public static int CCounter = 0; // keeps a static tally of the number of courses
+    //is incremented by 1 each time the constructor for a course is called
+    //useful for creating text views and progress bars by indexation
+
+    public class Course
+    {
+        int CourseNo;//backend variable
+        String ID;
+        String Name;
+        int CTD; //classes till date
+        int CA; //classes attended till date
+        int PA; //percentage attended
+
+        public void analyticsManipulator()
+        {
+            //CTD++ and a conditional CA++ at each increment
+            if(CTD==0)
+            {
+                PA=0;
+            }
+            else
+            {
+                PA = (100*CA)/CTD;
+            }
+        }
+
+
+        //constructor for creating table rows on the analytics page
+        public  Course(String course_id,String course_name)
+        {
+            CCounter++;
+            //initialising variables
+            CourseNo = CCounter;//backend variable
+            ID = course_id;
+            Name = course_name;
+            CA = 0;
+            CTD = 0;
+            PA = 0;
+
+            switch (CourseNo-1)
+            {
+                    case 0:
+                        TableRow TR0 = findViewById(R.id.TR0);
+                        TR0.setVisibility(View.VISIBLE);
+                        TextView TR0Tv1 = findViewById(R.id.TR0Tv1);TR0Tv1.setText(ID);
+                        TextView TR0Tv2 = findViewById(R.id.TR0Tv2);TR0Tv2.setText(Name);
+                        TextView TR0Tv3 = findViewById(R.id.TR0Tv3);TR0Tv3.setText(CTD);
+                        TextView TR0Tv4 = findViewById(R.id.TR0Tv4);TR0Tv4.setText(CA);
+                        ProgressBar TR0Pb = findViewById(R.id.TR0Pb);TR0Pb.setProgress(PA);
+                        break;
+                case 1:
+                    TableRow TR1 = findViewById(R.id.TR1);
+                    TR1.setVisibility(View.VISIBLE);
+                    TextView TR1Tv1 = findViewById(R.id.TR1Tv1);TR1Tv1.setText(ID);
+                    TextView TR1Tv2 = findViewById(R.id.TR1Tv2);TR1Tv2.setText(Name);
+                    TextView TR1Tv3 = findViewById(R.id.TR1Tv3);TR1Tv3.setText(CTD);
+                    TextView TR1Tv4 = findViewById(R.id.TR1Tv4);TR1Tv4.setText(CA);
+                    ProgressBar TR1Pb = findViewById(R.id.TR1Pb);TR1Pb.setProgress(PA);
+                    break;
+                case 2:
+                    TableRow TR2 = findViewById(R.id.TR2);
+                    TR2.setVisibility(View.VISIBLE);
+                    TextView TR2Tv1 = findViewById(R.id.TR2Tv1);TR2Tv1.setText(ID);
+                    TextView TR2Tv2 = findViewById(R.id.TR2Tv2);TR2Tv2.setText(Name);
+                    TextView TR2Tv3 = findViewById(R.id.TR2Tv3);TR2Tv3.setText(CTD);
+                    TextView TR2Tv4 = findViewById(R.id.TR2Tv4);TR2Tv4.setText(CA);
+                    ProgressBar TR2Pb = findViewById(R.id.TR2Pb);TR2Pb.setProgress(PA);
+                    break;
+                case 3:
+                    TableRow TR3 = findViewById(R.id.TR3);
+                    TR3.setVisibility(View.VISIBLE);
+                    TextView TR3Tv1 = findViewById(R.id.TR3Tv1);TR3Tv1.setText(ID);
+                    TextView TR3Tv2 = findViewById(R.id.TR3Tv2);TR3Tv2.setText(Name);
+                    TextView TR3Tv3 = findViewById(R.id.TR3Tv3);TR3Tv3.setText(CTD);
+                    TextView TR3Tv4 = findViewById(R.id.TR3Tv4);TR3Tv4.setText(CA);
+                    ProgressBar TR3Pb = findViewById(R.id.TR3Pb);TR3Pb.setProgress(PA);
+                    break;
+                case 4:
+                    TableRow TR4 = findViewById(R.id.TR4);
+                    TR4.setVisibility(View.VISIBLE);
+                    TextView TR4Tv1 = findViewById(R.id.TR4Tv1);TR4Tv1.setText(ID);
+                    TextView TR4Tv2 = findViewById(R.id.TR4Tv2);TR4Tv2.setText(Name);
+                    TextView TR4Tv3 = findViewById(R.id.TR4Tv3);TR4Tv3.setText(CTD);
+                    TextView TR4Tv4 = findViewById(R.id.TR4Tv4);TR4Tv4.setText(CA);
+                    ProgressBar TR4Pb = findViewById(R.id.TR4Pb);TR4Pb.setProgress(PA);
+                    break;
+                case 5:
+                    TableRow TR5 = findViewById(R.id.TR5);
+                    TR5.setVisibility(View.VISIBLE);
+                    TextView TR5Tv1 = findViewById(R.id.TR5Tv1);TR5Tv1.setText(ID);
+                    TextView TR5Tv2 = findViewById(R.id.TR5Tv2);TR5Tv2.setText(Name);
+                    TextView TR5Tv3 = findViewById(R.id.TR5Tv3);TR5Tv3.setText(CTD);
+                    TextView TR5Tv4 = findViewById(R.id.TR5Tv4);TR5Tv4.setText(CA);
+                    ProgressBar TR5Pb = findViewById(R.id.TR5Pb);TR5Pb.setProgress(PA);
+                    break;
+                case 6:
+                    TableRow TR6 = findViewById(R.id.TR6);
+                    TR6.setVisibility(View.VISIBLE);
+                    TextView TR6Tv1 = findViewById(R.id.TR6Tv1);TR6Tv1.setText(ID);
+                    TextView TR6Tv2 = findViewById(R.id.TR6Tv2);TR6Tv2.setText(Name);
+                    TextView TR6Tv3 = findViewById(R.id.TR6Tv3);TR6Tv3.setText(CTD);
+                    TextView TR6Tv4 = findViewById(R.id.TR6Tv4);TR6Tv4.setText(CA);
+                    ProgressBar TR6Pb = findViewById(R.id.TR6Pb);TR6Pb.setProgress(PA);
+                    break;
+                case 7:
+                    TableRow TR7 = findViewById(R.id.TR7);
+                    TR7.setVisibility(View.VISIBLE);
+                    TextView TR7Tv1 = findViewById(R.id.TR7Tv1);TR7Tv1.setText(ID);
+                    TextView TR7Tv2 = findViewById(R.id.TR7Tv2);TR7Tv2.setText(Name);
+                    TextView TR7Tv3 = findViewById(R.id.TR7Tv3);TR7Tv3.setText(CTD);
+                    TextView TR7Tv4 = findViewById(R.id.TR7Tv4);TR7Tv4.setText(CA);
+                    ProgressBar TR7Pb = findViewById(R.id.TR7Pb);TR7Pb.setProgress(PA);
+                    break;
+                case 8:
+                    TableRow TR8 = findViewById(R.id.TR8);
+                    TR8.setVisibility(View.VISIBLE);
+                    TextView TR8Tv1 = findViewById(R.id.TR8Tv1);TR8Tv1.setText(ID);
+                    TextView TR8Tv2 = findViewById(R.id.TR8Tv2);TR8Tv2.setText(Name);
+                    TextView TR8Tv3 = findViewById(R.id.TR8Tv3);TR8Tv3.setText(CTD);
+                    TextView TR8Tv4 = findViewById(R.id.TR8Tv4);TR8Tv4.setText(CA);
+                    ProgressBar TR8Pb = findViewById(R.id.TR8Pb);TR8Pb.setProgress(PA);
+                    break;
+                case 9:
+                    TableRow TR9 = findViewById(R.id.TR9);
+                    TR9.setVisibility(View.VISIBLE);
+                    TextView TR9Tv1 = findViewById(R.id.TR9Tv1);TR9Tv1.setText(ID);
+                    TextView TR9Tv2 = findViewById(R.id.TR9Tv2);TR9Tv2.setText(Name);
+                    TextView TR9Tv3 = findViewById(R.id.TR9Tv3);TR9Tv3.setText(CTD);
+                    TextView TR9Tv4 = findViewById(R.id.TR9Tv4);TR9Tv4.setText(CA);
+                    ProgressBar TR9Pb = findViewById(R.id.TR9Pb);TR9Pb.setProgress(PA);
+                    break;
+                    default:
+                        break;
+            }
+        }
+    }
